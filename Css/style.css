@@ -1,0 +1,153 @@
+/*Start veriables */
+:root {
+  --main-color: #008aaa;
+  --sub-color: #3bbadb;
+  --nav-color: #d1884f;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+/* small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* start header style */
+.header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 40px;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header ul li {
+  margin-left: 3rem;
+}
+.header ul li a {
+  color: black;
+  text-decoration: none;
+}
+.header ul li a.active {
+  color: var(--nav-color);
+}
+.header ul li a i {
+  margin-right: 5px;
+}
+@media (max-width: 767px) {
+  .header ul {
+    justify-content: center;
+  }
+  .header ul li {
+    margin: 0.5rem;
+  }
+}
+/* end header style */
+/* start landing page style */
+.landing-page {
+  padding-top: 5rem;
+}
+.landing-page .container {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1200px) {
+  .landing-page .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .landing-page .container .information {
+    margin-bottom: 30px;
+  }
+}
+.landing-page .container .information {
+  flex: 1;
+}
+@media (max-width: 767px) {
+  .landing-page .container .information p:first-of-type {
+    font-size: 1.5rem !important;
+  }
+  .landing-page .container .information h1 {
+    font-size: 2rem !important;
+  }
+}
+.landing-page .container .information p:first-of-type {
+  color: var(--sub-color);
+  font-size: 2rem;
+}
+.landing-page .container .information h1 {
+  font-size: 4rem;
+  color: var(--sub-color);
+}
+.landing-page .container .information h1 span {
+  color: var(--nav-color);
+}
+.landing-page .container .information p:last-of-type {
+  font-weight: bold;
+  line-height: 1.5;
+}
+.landing-page .container .information p:last-of-type a {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--sub-color);
+}
+.landing-page .container .information .buttons {
+  margin-top: 3rem;
+}
+.landing-page .container .information .buttons span {
+  padding: 10px 20px;
+  border: 1px solid;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.landing-page .container .information .buttons span:first-of-type {
+  margin-right: 20px;
+  color: white;
+  background-color: var(--sub-color);
+  border-color: var(--sub-color);
+}
+.landing-page .container .information .buttons span:first-of-type:hover {
+  background-color: white;
+  color: var(--sub-color);
+}
+.landing-page .container .information .buttons span:last-of-type {
+  color: var(--sub-color);
+  border-color: var(--sub-color);
+}
+.landing-page .container .information .buttons span:last-of-type:hover {
+  background-color: var(--sub-color);
+  color: white;
+}
+.landing-page .image img {
+  width: 600px;
+  max-width: 100%;
+}
+/* end landing page style */
